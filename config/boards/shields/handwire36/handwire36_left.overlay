@@ -33,13 +33,13 @@
             /* K20  K21  K22  K23  K24  ← bottom row */
             <&gpio0 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   /* K20 */
             <&gpio0 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   /* K21 */
-            <&gpio0 09 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   /* K22 */
-            <&gpio0 08 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   /* K23 */
-            <&gpio0 07 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   /* K24 */
+            <&gpio0 9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,    /* K22 */
+            <&gpio0 8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,    /* K23 */
+            <&gpio0 7 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,    /* K24 */
             /* K32  K33  K34              ← thumbs */
-            <&gpio0 06 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   /* K32 */
-            <&gpio0 05 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   /* K33 */
-            <&gpio0 04 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   /* K34 */
+            <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,    /* K32 */
+            <&gpio0 5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,    /* K33 */
+            <&gpio0 4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,    /* K34 */
             ;
     };
 
