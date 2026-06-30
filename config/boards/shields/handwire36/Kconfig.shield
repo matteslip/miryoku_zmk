@@ -1,7 +1,7 @@
 # Copyright 2024 Manna Harbour
 # https://github.com/manna-harbour/miryoku
 #
-# Kconfig shield definition for handwire36
+# Kconfig shield definition for handwire36 split
 
 config SHIELD_HANDWIRE36_LEFT
     def_bool $(shields_list_contains,handwire36_left)
