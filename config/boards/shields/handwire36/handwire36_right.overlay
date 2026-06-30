@@ -2,9 +2,9 @@
  * Copyright 2024 Manna Harbour
  * https://github.com/manna-harbour/miryoku
  *
- * Handwire36 RIGHT half (PERIPHERAL) — 18 direct pins for nice_nano
+ * Handwire36 RIGHT half (PERIPHERAL) -- 18 direct pins for nice_nano
  *
- * ⚠️  REPLACE GPIO pin numbers with YOUR actual right-side wiring.
+ * !!  REPLACE GPIO pin numbers with YOUR actual right-side wiring.
  */
 
 #include <dt-bindings/zmk/matrix_transform.h>
@@ -18,28 +18,28 @@
     kscan0: kscan {
         compatible = "zmk,kscan_gpio_direct";
         input-gpios =
-            /* K05  K06  K07  K08  K09  ← top row */
-            <&gpio0 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   /* K05 — P0.11 */
-            <&gpio0 12 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   /* K06 — P0.12 */
-            <&gpio0 9  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   /* K07 — P0.09 */
-            <&gpio1 13 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   /* K08 — P1.13 */
-            <&gpio1 7  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   /* K09 — P1.07 */
-            /* K15  K16  K17  K18  K19  ← middle row */
-            <&gpio1 0  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   /* K15 — P1.00 */
-            <&gpio1 6  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   /* K16 — P1.06 */
-            <&gpio0 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   /* K17 — P0.10 */
-            <&gpio1 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   /* K18 — P1.15 */
-            <&gpio1 2  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   /* K19 — P1.02 */
-            /* K25  K26  K27  K28  K29  ← bottom row */
-            <&gpio0 24 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   /* K25 — P0.24 */
-            <&gpio1 1  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   /* K26 — P1.01 */
-            <&gpio1 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   /* K27 — P1.11 */
-            <&gpio0 2  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   /* K28 — P0.02 */
-            <&gpio0 29 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   /* K29 — ⚠️  проверь пин! */
-            /* K35  K36  K37              ← thumbs */
-            <&gpio0 22 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   /* K35 — P0.22 */
-            <&gpio0 20 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   /* K36 — P0.20 */
-            <&gpio0 17 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   /* K37 — P0.17 */
+            /* K05  K06  K07  K08  K09  <- top row */
+            <&gpio0 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   /* K05 -- P0.11 */
+            <&gpio0 12 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   /* K06 -- P0.12 */
+            <&gpio0 9  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   /* K07 -- P0.09 */
+            <&gpio1 13 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   /* K08 -- P1.13 */
+            <&gpio1 7  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   /* K09 -- P1.07 */
+            /* K15  K16  K17  K18  K19  <- middle row */
+            <&gpio1 0  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   /* K15 -- P1.00 */
+            <&gpio1 6  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   /* K16 -- P1.06 */
+            <&gpio0 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   /* K17 -- P0.10 */
+            <&gpio1 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   /* K18 -- P1.15 */
+            <&gpio1 2  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   /* K19 -- P1.02 */
+            /* K25  K26  K27  K28  K29  <- bottom row */
+            <&gpio0 24 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   /* K25 -- P0.24 */
+            <&gpio1 1  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   /* K26 -- P1.01 */
+            <&gpio1 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   /* K27 -- P1.11 */
+            <&gpio0 2  (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   /* K28 -- P0.02 */
+            <&gpio0 29 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   /* K29 -- CHECK PIN */
+            /* K35  K36  K37              <- thumbs */
+            <&gpio0 22 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   /* K35 -- P0.22 */
+            <&gpio0 20 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   /* K36 -- P0.20 */
+            <&gpio0 17 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   /* K37 -- P0.17 */
             ;
     };
 
