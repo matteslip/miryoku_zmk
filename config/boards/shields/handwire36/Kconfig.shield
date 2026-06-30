@@ -1,0 +1,34 @@
+# Copyright 2024 Manna Harbour
+# https://github.com/manna-harbour/miryoku
+#
+# Kconfig shield definition for handwire36
+
+config SHIELD_HANDWIRE36_LEFT
+    def_bool $(shields_list_contains,handwire36_left)
+
+config SHIELD_HANDWIRE36_RIGHT
+    def_bool $(shields_list_contains,handwire36_right)
+
+if SHIELD_HANDWIRE36_LEFT || SHIELD_HANDWIRE36_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+config ZMK_SPLIT_BLE
+    default y
+
+if SHIELD_HANDWIRE36_LEFT
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif # SHIELD_HANDWIRE36_LEFT
+
+if SHIELD_HANDWIRE36_RIGHT
+
+config ZMK_SPLIT_ROLE_PERIPHERAL
+    default y
+
+endif # SHIELD_HANDWIRE36_RIGHT
+
+endif # SHIELD_HANDWIRE36
