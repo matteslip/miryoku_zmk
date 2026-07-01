@@ -39,7 +39,7 @@
             /* K32  K33  K34              <- thumbs */
             <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,    /* K32 */
             <&gpio0 5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,    /* K33 */
-            <&gpio0 4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,    /* K34 */
+            <&gpio0 4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>     /* K34 */
             ;
     };
 
