@@ -12,14 +12,17 @@ config SHIELD_HANDWIRE36_RIGHT
 if SHIELD_HANDWIRE36_LEFT || SHIELD_HANDWIRE36_RIGHT
 
 config ZMK_SPLIT
+    bool
     default y
 
 config ZMK_SPLIT_BLE
+    bool
     default y
 
 if SHIELD_HANDWIRE36_LEFT
 
 config ZMK_SPLIT_ROLE_CENTRAL
+    bool
     default y
 
 endif # SHIELD_HANDWIRE36_LEFT
@@ -27,6 +30,7 @@ endif # SHIELD_HANDWIRE36_LEFT
 if SHIELD_HANDWIRE36_RIGHT
 
 config ZMK_SPLIT_ROLE_PERIPHERAL
+    bool
     default y
 
 endif # SHIELD_HANDWIRE36_RIGHT
