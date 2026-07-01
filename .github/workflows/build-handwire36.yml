@@ -1,7 +1,7 @@
 # Copyright 2024 Manna Harbour
 # https://github.com/manna-harbour/miryoku
 
-name: 'Build handwire36 (nice_nano_v2)'
+name: 'Build handwire36'
 on: workflow_dispatch
 jobs:
   build:
